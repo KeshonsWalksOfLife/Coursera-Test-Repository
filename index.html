@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Keshon Bowman"/>
     <title>Accessibility Improvement Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
@@ -16,24 +17,46 @@
   </head>
   <!--Body Section-->
   <body>
-    <div class="container">
-      <header>
-        <h1>Accessibility Improvement Form</h1>
-      </header>
+      <div class="container">
+        <header>
+          <h1 id="title">Accessibility Improvement Form</h1>
+          <h3>Welcome to the Accessibility Improvement Quest!</h3>
+          <p>
+            <h2>Mission Plan</h2>
+            Are you ready to embark on a mission to make <br><span>what you see, be
+            heard?</span>
+          </p>
+          <p>
+            Your Superpowers are needed to identify and conquer this
+            accessibility challenges that heroes like ourselves face every single day.
+          </p>
+          <p>please fill out the form below and submit your feedback</p>
+        </header>
+        <form  id="survey-form">
+        <section id="user-info">
+          <h2>User Information</h2>
+          <p>Introduce yourself or stay incognito - The choice is yours! Your superhero name is optional,
+            but we would love to know who you are like Bruce Wayne rather than Batman.
+          </p>
+          <label for="first-name">First Name: </label>
+          <input type="text" id="-first-name" name="first-name" />
+          <label for="last-name">Last Name: </label>
+          <input type="text" id="-last-name" name="full-name" />
+        </section>
 
-      <section id="user-info">
-        <h2>User Information</h2>
-      </section>
+        <section id="accessibility-feedback">
+          <h2>Accessibility Feedback</h2>
+          <!--Accessibility Feedback form field-->
+        </section>
 
-      <section id="accessibility-feedback">
-        <h2>Accessibility Feedback</h2>
-      </section>
+        <section id="rating-and-comments">
+          <h2>Rating and Comments</h2>
+          <!--Rating and Comments form field-->
+        </section>
 
-      <section id="rating-and-comments">
-        <h2>Rating and Comments</h2>
-      </section>
-
-      <button id="submit-btn">Submit</button>
-    </div>
+        <button id="submit-btn">Submit</button>
+      </div>
+    </form>
   </body>
+  <!--End Of Body Section-->
 </html>
