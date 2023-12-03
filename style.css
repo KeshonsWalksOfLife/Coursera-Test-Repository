@@ -3,10 +3,14 @@
     padding: 0;
     box-sizing: border-box; 
 } 
-
+:root {
+    --primary-color: #33a112;
+    --secondary-color:  #3acabb;
+    --complementary-color: #fff;
+}
 body { 
     min-height: 100vh;
-    background-color: rgb(225,189,179); 
+    background-color: var(--complementary-color) 
 } 
 
 .header { 
@@ -15,7 +19,7 @@ body {
     left: 0;
     width: 100%; 
     padding: 20px 100px;
-    background-color: black; 
+    background-color: white; 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
@@ -24,18 +28,20 @@ body {
 
 } .logo { 
     font-size: 2rem; 
-    color: #fff; 
+    color: var(--secondary-color);
     text-decoration: none; 
     font-weight: 600; 
+    font-family: 'Ubuntu', sans-serif;';
 } 
 
 .nav-link a { 
     position: relative; 
     font-size: 16px; 
-    color: #fff; 
+    color: #000; 
     text-decoration: none; 
     font-weight: 250px; 
     margin-left: 15px; 
+    font-family: 'Open-Sans', sans-serif;
 } 
 
 .nav-link a::before { 
@@ -45,55 +51,78 @@ body {
     left: 0; 
     width: 0; 
     height: 2px; 
-    background: #fff; 
+    background-color: var(--primary-color);
     transition: .3s;
  }
- 
+
+ .nav-link a:hover { 
+    color: var(--secondary-color); 
+ }
+
  .nav-link a:hover::before { 
     width: 100%;
  } 
  
  .hero { 
-    margin-top: 120px;
+    margin-top: 60px;
+    padding: 15px 100px;
+    text-align: justify;
  } 
- 
- .hero-h1 { 
-    text-align: center;
-     color: white; 
-} 
 
-.hero-img { 
-    padding: 100; 
-    margin-left: 120px; 
-    margin-top: 20px; 
-    border: 2px solid white; 
-    box-shadow: 0 0 10px 0;
- } 
- 
- .hero-h3 { 
-    margin: 18px; 
-    color: red; 
-    font-size: 14px; 
-    text-align: center; 
-} 
-
-.prevent { 
-    text-align: center; 
-    margin-bottom: 20px;
+ .hero h1 { 
+    font-size: 3rem; 
+    color: var(--secondary-color); 
+    font-weight: 600; 
+    font-family: 'Ubuntu', sans-serif; 
  }
- 
- .grid-container { 
-    display: inline-grid; 
-    grid-template-columns: 45px 250px; 
-    column-gap: -10px; 
-    grid-template-rows: 1fr 1fr; 
-    margin-top: 2px; 
-    margin-left: 14px; 
-    font-size: 14px;
- } 
- 
- footer { 
-    background-color: black; 
-    color: white; 
-    margin-top: -100px; 
+
+ .hero h3 { 
+    font-size: 1.5rem; 
+    color: var(--primary-color); 
+    font-weight: 600; 
+    font-family: 'Ubuntu', sans-serif; 
+ }
+
+ .hero-h1, .hero-h3 { 
+    position: relative; 
+    top: 335px;
+    right:  20px;
+ }
+
+img, .hero-img { 
+    width: 450px; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 6px;
+    display: block;
 } 
+
+.food1 {
+    width: 550px;
+    position: relative;
+    top: -40px;
+    left: 857px;
+    z-index: 3;
+}
+
+.travel2 {
+    width: 550px;
+    position: relative;
+    top: -160px;
+    left: 1175px;
+    z-index: 2;
+}
+
+.yoga1 {
+    width: 600px;
+    position: relative;
+    top: -415px;
+    left: 725px;
+    z-index: 1;
+}
+
+section { 
+    margin-top: -300px;
+    text-align: center; 
+    background-color: var(--complementary-color); 
+}
