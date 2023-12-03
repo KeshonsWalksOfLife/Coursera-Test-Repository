@@ -64,9 +64,11 @@ body {
  } 
  
  .hero { 
-    margin-top: 60px;
+     margin-top: 60px;
+     margin-bottom: -325px;
     padding: 15px 100px;
     text-align: justify;
+    background-color: beige;
  } 
 
  .hero h1 { 
@@ -81,6 +83,7 @@ body {
     color: var(--primary-color); 
     font-weight: 600; 
     font-family: 'Ubuntu', sans-serif; 
+    margin-top: 7px;
  }
 
  .hero-h1, .hero-h3 { 
@@ -122,7 +125,17 @@ img, .hero-img {
 }
 
 section { 
-    margin-top: -300px;
-    text-align: center; 
-    background-color: var(--complementary-color); 
+    text-align: center;  
+    border: #000 solid 2px;
+    border-radius: 10px;
 }
+
+.grid-container { 
+    display: inline-grid; 
+    grid-template-columns: 45px 250px; 
+    column-gap: -10px; 
+    grid-template-rows: 1fr 1fr; 
+    margin-top: 2px; 
+    margin-left: 14px; 
+    font-size: 14px;
+ } 
