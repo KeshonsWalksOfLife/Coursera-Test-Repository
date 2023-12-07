@@ -178,6 +178,46 @@ section {
     border-radius: 10px;
 }
 
+.yoga-section  {
+    margin-top: -750px ;
+    padding: 10px 100px;
+    background-color: var(--secondary-color);
+    position: relative;
+    margin-bottom: 600px;
+}
+
+.yoga-container {
+    position: relative;
+    top: -450px;
+    left: -40px;
+}
+
+.yoga-img {
+    width: 1000px;
+    position: relative;
+    top: 850px;
+}
+
+.h2-1 {
+    font-size: 6rem;
+    color: var(--complementary-color);
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: right;
+    position: relative;
+    left: 50px;
+}
+
+.h2-1 span{
+    color: var(--primary-color);
+    font-size: 8rem;
+}
+
+span.peace {
+    color: beige;
+    font-size: 8rem;
+}
+
 .prevent {
   text-align: center;
   margin-bottom: 20px;
