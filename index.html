@@ -1,147 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
-    <meta description="design" />
-    <title>Sarah's Blog</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
 
-  <body>
-    <!--Begin Navigation-->
-    <header class="header">
-      <div class="nav-logo">
-        <a href="#" class="logo">Logo</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+  <meta description="design" />
+  <title>Sarah's Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var open = false;
+      var dropdown = document.getElementById("dropdown");
+
+      document.getElementById("menu-button").addEventListener("click", function () {
+        open = !open;
+        dropdown.style.display = open ? "block" : "none";
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!event.target.closest("#dropdown") && !event.target.closest("#menu-button")) {
+          open = false;
+          dropdown.style.display = "none";
+        }
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <!--Begin Navigation-->
+  <header class="header relative">
+    <div class="nav-logo">
+      <a href="#" class="logo">Logo</a>
+    </div>
+
+    <div class="hidden md:block nav-link">
+      <a href="#home" class="primary">Home</a>
+      <a href="#yoga" class="secondary">Yoga</a>
+      <a href="#travel" class="primary">Travel</a>
+      <a href="#healthy" class="secondary">Healthy Recipes</a>
+      <a href="#contact" class="primary">Contact</a>
+    </div>
+
+    <button id="menu-button" class="block md:hidden p-2 text-gray-800 text-lg font-bold ">
+      Menu
+    </button>
+
+    <div id="dropdown" class=" absolute right-6 -bottom-[183px] mt-2 bg-white border rounded-md shadow-lg md:hidden">
+      <a href="#home" class="block px-4 py-2 text-sm text-gray-800">Home</a>
+      <a href="#yoga" class="block px-4 py-2 text-sm text-gray-800">Yoga</a>
+      <a href="#travel" class="block px-4 py-2 text-sm text-gray-800">Travel</a>
+      <a href="#healthy" class="block px-4 py-2 text-sm text-gray-800">Healthy Recipes</a>
+      <a href="#contact" class="block px-4 py-2 text-sm text-gray-800">Contact</a>
+    </div>
+  </header>
+
+  <!--End Navigation-->
+
+  <!--Begin Main-->
+  <main class=" w-full overflow-hidden">
+    <div class="hero">
+      <div id="bio">
+        <h1 class="hero-h1">
+          Travel,<br />
+          Thrive,<br />
+          Transform.
+        </h1>
+        <h3 class="hero-h3">
+          Experience the World through Travel,<br />
+          Embrace Wellness with Yoga,<br />
+          Discover Health with Wholesome Recipes.
+        </h3>
+        <p class="hero-disc">
+          Join our global community in uncovering a path to personal growth as
+          <br />
+          we embark on a journey to live a life of meaning and purpose
+          together!
+        </p>
+        <input type="button" value="Read The Blog" class="hero-btn blog-btn text-white bg-black" />
+        <input type="button" value="Subscribe" class="hero-btn sub-btn text-white bg-black" />
       </div>
-
-      <div class="nav-link">
-        <a href="#home" class="primary">Home</a>
-        <a href="#yoga" class="secondary">Yoga</a>
-        <a href="#travel" class="primary">Travel</a>
-        <a href="#healthy" class="secondary">Healthy Recipes</a>
-        <a href="#contact" class="primary">Contact</a>
+      <!--Begin Hero Images-->
+      <div class="img-section">
+        <img src="/media/food1.jpg" width="25%" title="Healthy Food Lifestyle" class="hero-img food1" />
+        <img src="/media/travel2.jpg" width="25%" title="Traveling Lifestyle" class="hero-img travel2" />
+        <img src="/media/yoga1.jpg" width="25%" title="Yoga Lifestyle" class="hero-img yoga1" />
       </div>
-    </header>
-    <!--End Navigation-->
+    </div>
+    <!--End Hero Images-->
 
-    <!--Begin Main-->
-    <main>
-      <div class="hero">
-        <div id="bio">
-          <h1 class="hero-h1">
-            Travel,<br />
-            Thrive,<br />
-            Transform.
-          </h1>
-          <h3 class="hero-h3">
-            Experience the World through Travel,<br />
-            Embrace Wellness with Yoga,<br />
-            Discover Health with Wholesome Recipes.
-          </h3>
-          <p class="hero-disc">
-            Join our global community in uncovering a path to personal growth as
-            <br />
-            we embark on a journey to live a life of meaning and purpose
-            together!
-          </p>
-          <input
-            type="button"
-            value="Read The Blog"
-            class="hero-btn blog-btn text-white bg-black"
-          />
-          <input type="button" value="Subscribe" class="hero-btn sub-btn text-white bg-black" />
-        </div>
-        <!--Begin Hero Images-->
-        <div class="img-section">
-          <img
-            src="/media/food1.jpg"
-            width="25%"
-            title="Healthy Food Lifestyle"
-            class="hero-img food1"
-          />
-          <img
-            src="/media/travel2.jpg"
-            width="25%"
-            title="Traveling Lifestyle"
-            class="hero-img travel2"
-          />
-          <img
-            src="/media/yoga1.jpg"
-            width="25%"
-            title="Yoga Lifestyle"
-            class="hero-img yoga1"
-          />
-        </div>
-      </div>
-      <!--End Hero Images-->
+    <!--Begin Grid Section 1-->
+    <section div="yoga-section">
+      <article class="grid-container">
+        <h2 class="section-1">
+          Where the union of breath, body, and mind illuminates the path to
+          inner peace and balance.
+        </h2>
+      </article>
+    </section>
+    <!--End Grid Section 1-->
 
-      <!--Begin Grid Section 1-->
-      <section div="yoga-section">
-        <article class="grid-container">
-          <h2 class="section-1">
-            Where the union of breath, body, and mind illuminates the path to
-            inner peace and balance.
-          </h2>
-        </article>
-      </section>
-      <!--End Grid Section 1-->
+    <!--Begin Grid Section 2-->
+    <section div="travel-section">
+      <article class="grid-container">
+        <h3 class="art-header">Ex.2</h3>
+        <p class="article grid-item">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p></p>
+      </article>
+    </section>
+    <!--End Grid Section 2-->
 
-      <!--Begin Grid Section 2-->
-      <section div="travel-section">
-        <article class="grid-container">
-          <h3 class="art-header">Ex.2</h3>
-          <p class="article grid-item">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p></p>
-        </article>
-      </section>
-      <!--End Grid Section 2-->
+    <!--Begin Grid Section 3-->
+    <section div="healthy-recipes-section">
+      <article class="grid-container">
+        <h3 class="art-header">Ex.3</h3>
+        <p class="article grid-item">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </article>
+    </section>
+    <!--End Grid Section 3-->
+  </main>
+  <!--End Main-->
 
-      <!--Begin Grid Section 3-->
-      <section div="healthy-recipes-section">
-        <article class="grid-container">
-          <h3 class="art-header">Ex.3</h3>
-          <p class="article grid-item">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </article>
-      </section>
-      <!--End Grid Section 3-->
-    </main>
-    <!--End Main-->
+  <!--Begin Footer-->
+  <footer class="contact">
+    <h2 class="footer-info">If You Need Please Contact at</h2>
+    <ol class="info">
+      <li>Phone Number:123-456-7890</li>
+      <li>Email: Helloworld@yahoo.com</li>
+      <li>Emergency Hotline: 67820</li>
+      <li>Mailing Address: 123 Main Street Sunny Side, LA, 72570</li>
+    </ol>
+    <p>&copy; 2023 Sarah's Blog</p>
+  </footer>
+  <!--End Footer-->
+</body>
 
-    <!--Begin Footer-->
-    <footer class="contact">
-      <h2 class="footer-info">If You Need Please Contact at</h2>
-      <ol class="info">
-        <li>Phone Number:123-456-7890</li>
-        <li>Email: Helloworld@yahoo.com</li>
-        <li>Emergency Hotline: 67820</li>
-        <li>Mailing Address: 123 Main Street Sunny Side, LA, 72570</li>
-      </ol>
-      <p>&copy; 2023 Sarah's Blog</p>
-    </footer>
-    <!--End Footer-->
-  </body>
 </html>
