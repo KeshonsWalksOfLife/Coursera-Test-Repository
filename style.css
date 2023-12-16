@@ -257,14 +257,27 @@ article.art-label {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     margin-left: 6px;
-}
+} 
 
+    section#healthy-recipes {
+        width: 1000px;
+        height: 75vh;
+    }
+
+
+    footer {
+      background-color: black;
+      color: white;
+      margin-top: -100px;
+    }
+    
 ol.list {
     margin-bottom: 10px;
 }
 
+
 li {
-    margin-bottom: 25px;
+    margin-bottom: 2px;
     padding: 25px 20px;
     list-style-type: none;
     font-family: 'Open-Sans', sans-serif;
@@ -272,9 +285,4 @@ li {
     font-weight: 700;
 }
 
-footer {
-  background-color: black;
-  color: white;
-  margin-top: -100px;
-}
 
