@@ -138,7 +138,7 @@ img, .hero-img {
     z-index: 1;
 }
 
-.hero-btn {
+input.hero-btn {
     position: relative;
     top: 200px;
     left: 0px;
@@ -160,7 +160,6 @@ img, .hero-img {
 .blog-btn:hover {
     background-color: var(--secondary-color);
     color: #fff;
-    box-shadow: 0px 0px 10px 5px;
 }
 
 .sub-btn {
@@ -259,17 +258,51 @@ article.art-label {
     margin-left: 6px;
 } 
 
-    section#healthy-recipes {
-        width: 1000px;
-        height: 75vh;
-    }
+section#healthy-recipes {
+        width: 100%;
+        height: 50vh;
+}
 
+table {
+    margin-top: 2%;
+    margin-left: 2%;
+}
 
-    footer {
+h2#healthy-h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5em;
+    position: relative;
+    top: 15px;
+    left: 10px
+}
+
+.table-head, .table-data {
+    border:  2px solid #0a0a23;
+    padding: 10px 5px;
+    border-radius: 4px;
+}
+
+.table-head {
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2em;
+    box-shadow: 0 0 2px 0 black;
+}
+
+h3#healthy-h3 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right:  100px;
+    margin-top: -250px;
+    font-family: 'open-sans', sans-serif;
+    font-size: 2rem;
+}
+ footer {
       background-color: black;
       color: white;
       margin-top: -100px;
-    }
+ }
     
 ol.list {
     margin-bottom: 10px;
