@@ -1,9 +1,9 @@
-
 * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
 } 
+
 :root {
     --primary-color: #33a112;
     --secondary-color:  #3acabb;
@@ -28,7 +28,9 @@ body {
     z-index: 100; 
     box-shadow: 0px 0px 5px 0px; 
 
-} .logo { 
+}
+
+.logo { 
     font-size: 2rem; 
     color: var(--secondary-color);
     text-decoration: none; 
@@ -143,10 +145,10 @@ img.hero-img {
     z-index: 1;
 }
 
-input[type="button"] {
+.hero-btn {
     position: relative;
     top: 200px;
-    left: 30px;
+    left: 30px; 
     margin-left: 10px;
     padding: 10px 20px;
     font-size: 1rem;
@@ -156,6 +158,7 @@ input[type="button"] {
     font-family: 'Open-Sans', sans-serif;
     transition: .3s ease-in-out;
 }
+
 .blog-btn {
     background-color: #000;
     color: #fff;
@@ -257,6 +260,7 @@ article.travel-art-label {
     left: 210px;
     border-radius: 15px;
     box-shadow: 25px 25px 20px 0;
+    background-color: beige;
 }
 
 .flex {
@@ -289,9 +293,23 @@ ul li {
     font-size: 1rem;
     font-weight: 700;
 }
-/*Left OFF Fixing Descriptions */
-.travel-list {
 
+.travel-with, .travel-way {
+    margin-top: 5px;
+    margin-bottom: 22.5px;
+}
+
+.travel-need, .travel-supply {
+    margin-top: 47.5px;
+}
+
+.list {
+    margin-bottom: 45px;
+}
+
+li.travel-list {
+    margin-top: 25px;
+    margin-bottom: -25px;
 }
 
 .list-p {
