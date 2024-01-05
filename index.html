@@ -33,7 +33,7 @@
 
     <!--Begin Main-->
     <main id="main-header">
-      <div class="hero">
+      <div class="hero" id="home">
         <h1 class="hero-h1">
           Travel,<br />
           Thrive,<br />
@@ -85,7 +85,12 @@
     <!--Begin Yoga Section -->
     <section class="yoga-section">
       <div class="yoga-container">
-        <img src="/media/yoga-2.jpg" title="Yoga Lifestyle" class="yoga-img" />
+        <img
+          src="/media/yoga-2.jpg"
+          title="Yoga Lifestyle"
+          class="yoga-img"
+          id="yoga"
+        />
         <h2 class="h2-1">
           Where<br />
           The union of <br />
@@ -104,14 +109,13 @@
     <!--End Yoga Section 1-->
 
     <!--Begin Travel Section -->
-    <section id="travel-section">
+    <section class="travel-section" id="travel">
       <article class="travel-art-label">
         <div class="flex">
           <h2 class="h2-trav">What's The Best Way To Travel?</h2>
           <ul class="travel-way">
             <li class="travel-supply">
               Always carry essential documents like passports and visas.
-              <img src="" alt="" />
             </li>
             <li class="travel-supply">
               Research local customs and traditions before travel
@@ -164,13 +168,33 @@
               </p>
             </li>
           </ul>
+          <h3 class="h3-travel">
+            Unlock These Destinations & More On Our blog
+            <span class="travel-span"
+              >Let your next travel story begin here!</span
+            >
+          </h3>
+          <button
+            type="submit"
+            value="Read The Blog"
+            class="travel-mit blog-btn hero-btn"
+          >
+            Read The Blog
+          </button>
+          <button
+            type="submit"
+            value="Subscribe"
+            class="travel-scribe sub-btn hero-btn"
+          >
+            Subscribe
+          </button>
         </div>
       </article>
     </section>
     <!--End Travel Section -->
 
     <!--Begin Healthy Food Section -->
-    <section id="healthy-recipes">
+    <section class="healthy-recipes" id="healthy">
       <h2 id="healthy-h2">
         Here's A Couple Of Delicious Recipes to Follow for a Health Tip
       </h2>
@@ -227,20 +251,60 @@
         For more delicious Recipes to follow, <br />
         explore our curated collection below!
       </h3>
+      <h4 id="healthy-h4">Just  <span class="one"> One</span> Button Away From Winning A Delicious Recipe <span class="read"><br>*Read The Blog*</span></h4>
+      <button
+        type="submit"
+        value="Read The Blog"
+        class="recipe-mit blog-btn hero-btn"
+      >
+        Read The Blog
+      </button>
+      <button
+        type="submit"
+        value="Subscribe"
+        class="recipe-scribe sub-btn hero-btn"
+      >
+        Subscribe
+      </button>
     </section>
     <!--End Healthy Food Section -->
     <!--End Main Sections-->
-    <hr />
+    <hr/>
     <!--Begin Footer-->
-    <footer class="contact">
-      <h2 class="footer-info">If You Need Please Contact at</h2>
-      <ol class="info">
-        <li>Phone Number:123-456-7890</li>
-        <li>Email: Helloworld@yahoo.com</li>
-        <li>Emergency Hotline: 67820</li>
-        <li>Mailing Address: 123 Main Street Sunny Side, LA, 72570</li>
-      </ol>
-      <p>&copy; 2023 Sarah's Blog</p>
+    <footer id="footer-">
+      <div class="site-footer">
+        <div class="footer-menu">
+          <div class="float">
+            <h2 class="footer-h2">Connect with Us</h2>
+            <p class="footer-p">
+              Stay updated with the latest travel adventures, yoga insight, and
+              healthy recipes. <br />
+              Explore more in our community and embark on a holistic journey
+              towards wellness.
+            </p>
+            <div class="copyright">2023&copy;Sarah's Blog</div>
+          </div>
+          <div class="anchor-foot">
+            <a href="#" class="foot">Home</a>
+            <a href="#travel" class="foot">Travel</a>
+            <a href="#yoga" class="foot">Yoga</a>
+            <a href="#healthy" class="foot">Healthy Recipes</a>
+            <a href="#contact" class="foot">Contact</a></li>
+            <a href="#" class="foot">Terms of Use</a>
+            <a href="#" class="foot">Privacy Policy</a>
+          </div>
+
+          <div class="footer-contact">
+            <h4 class="footer-h4">Contact Us</h4>
+            <p class="footer-p">Email: contact@sarahsblog.com</p>
+          </div>
+
+          <div class="footer-social">
+          <a href="#" class="social-icon">Instagram</a>
+          <a href="#" class="social-icon">Facebook</a>
+          <a href="#" class="social-icon">Pinterest</a>
+          </div>
+      </div>
     </footer>
     <!--End Footer-->
   </body>
