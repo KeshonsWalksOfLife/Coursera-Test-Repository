@@ -12,7 +12,9 @@
 
 body { 
     min-height: 100vh;
+    width: 100%;
     background-color: var(--complementary-color);
+    overflow: scroll;
 } 
 
 .header { 
@@ -459,7 +461,7 @@ button.recipe-mit, .recipe-scribe {
     width: 1400px;
     position: relative;
     top: 53px;
-    left: 75px;
+    left: 95px;
     font-family: 'open-sans', sans-serif;
 }
 
@@ -516,7 +518,7 @@ button.recipe-mit, .recipe-scribe {
     width: 800px;
     padding: 0px 20px;
     position: relative;
-    top: 58px;
-    right: -380px;
+    top: 65px;
+    right: -360px;
     font-family: 'Ubuntu',sans-serif;
 }
