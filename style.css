@@ -39,6 +39,10 @@ body {
     font-family: 'Ubuntu', sans-serif;
 } 
 
+.toggler {
+    opacity: 0;
+}
+
 .nav-link a { 
     position: relative; 
     font-size: 16px; 
@@ -535,7 +539,37 @@ button.recipe-mit, .recipe-scribe {
     }
 
     .nav-link a {
-        top: 10px
+        top: 10px;
+    }
+
+    .menu-wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    
+    .menu-wrap .toggler {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+    
+    .nav-link .hamburger {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        padding: 1rem;
+        background-color: rgba(0,145, 95, 0.6);
+        
     }
 
     .hero h1 {
